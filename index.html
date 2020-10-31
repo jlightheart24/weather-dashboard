@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <h1 class="text-white mx-auto">Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <main class="container">
+            <div class="row">
+                <div id="search" class="col-5">
+                    <h3>Search for a City:</h3>
+                    <form id="searchCity">
+                        <input type="text">
+                        <input type="submit">
+                    </form>
+                </div>
+                <div id="information" class="col-6 container">
+                    <div id="forecast" class="container">
+                        <h2>5-day Forecast:</h2>
+                    </div>
+                    <div id="current">
+                        <h2 class="cityName"></h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
